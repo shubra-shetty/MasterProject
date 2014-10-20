@@ -18,5 +18,21 @@
         <activity android:name=".RegisterActivity"
         		  android:label="Register New Account"></activity>
 
+        
+        <!-- To Home Page -->
+         <activity
+      android:name=".HomeActivity"
+      android:label="Home Page">          
+ </activity>
+ 
+         <!-- To Plan an Event Page -->
+         <activity
+      android:name=".PlanEvent"
+      android:label="Plan an Event">          
+ </activity>
+         
+          <activity android:name="com.packagename.FromActivity"></activity>
+   <activity android:name="com.packagename.ToActivity"></activity>
+   
     </application>
 </manifest>

@@ -14,6 +14,8 @@ public class LoginActivity extends Activity {
         
         TextView registerScreen = (TextView) findViewById(R.id.link_to_register);
         
+       
+        
         // Listening to register new account link
         registerScreen.setOnClickListener(new View.OnClickListener() {
 			
@@ -23,5 +25,21 @@ public class LoginActivity extends Activity {
 				startActivity(i);
 			}
 		});
+        
+       
+        TextView homeScreen = (TextView) findViewById(R.id.btnLogin);   
+        
+        
+        // Listening to register new account link
+        homeScreen.setOnClickListener(new View.OnClickListener() {
+        	
+        //Added this to go to home page
+        public void onClick(View v)
+        {
+            Intent intent = new Intent(getApplicationContext(), HomeActivity.class);
+            startActivity(intent);
+        }
+    });
+
     }
 }

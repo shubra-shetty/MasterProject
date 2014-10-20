@@ -2,4 +2,27 @@
 <resources>
     <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">AndroidLoginAndRegistration</string>
+    
+    <string name="cuisine_prompt">Choose a cuisine</string>
+ 
+    <string-array name="cuisine_arrays">
+        <item>American</item>
+        <item>Mexican</item>
+        <item>Chinese</item>
+        <item>Italian</item>
+        <item>Indian</item>
+        <item>Thai</item>
+    </string-array>
+    
+    <string name="type_prompt">Place to meet</string>
+ 
+    <string-array name="type_arrays">
+        <item>Restaurant</item>
+        <item>Fast food</item>
+        <item>Cafe</item>
+        <item>Pizza</item>
+        <item>Bakery</item>
+        <item>Ice cream</item>
+    </string-array>
+    
 </resources>
