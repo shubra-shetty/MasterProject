@@ -14,6 +14,16 @@
         <item>Thai</item>
     </string-array>
     
+    <string name="friends_prompt">Choose your Friends</string>
+ 
+    <string-array name="friends">
+        <item>Shubra</item>
+        <item>Shruthi</item>
+        <item>Richard</item>
+        <item>Yang</item>
+        <item>Sandy</item>
+    </string-array>
+    
     <string name="type_prompt">Place to meet</string>
  
     <string-array name="type_arrays">

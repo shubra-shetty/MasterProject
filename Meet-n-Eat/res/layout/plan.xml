@@ -77,11 +77,11 @@
         android:rating="2.0" />
             
          <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/cuisine_arrays"
-        android:prompt="@string/cuisine_prompt" />
+             android:id="@+id/spinner1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:entries="@array/cuisine_arrays"
+             android:prompt="@array/cuisine_arrays" />
  
     	<Spinner
         android:id="@+id/spinner2"

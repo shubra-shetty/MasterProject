@@ -7,7 +7,7 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".LoginActivity"
-                  android:label="Login to your Account">
+                  android:label="Meet-n-eat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +22,7 @@
         <!-- To Home Page -->
          <activity
       android:name=".HomeActivity"
-      android:label="Home Page">          
+      android:label="Welcome...">          
  </activity>
  
          <!-- To Plan an Event Page -->

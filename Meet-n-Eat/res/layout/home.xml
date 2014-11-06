@@ -44,8 +44,22 @@
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
-		  		android:text="Welcome to Meet-n-Eat"/>
-		 
+		  		android:text="Choose your friends..."/>
+		  <!--  Select your Friends -->
+		   <!--  <Spinner
+             android:id="@+id/spinnerfr"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:entries="@array/friends_arrays"
+             android:prompt="@string/friends_prompt" /> -->
+		   
+		   <ListView android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:entries="@array/friends"
+        android:drawSelectorOnTop="false"
+        android:background="#ff000000"/>
+		    
 		  <!-- Plan an Event button -->	
 		  <Button android:id="@+id/btnPlan" 
 		  		android:layout_width="fill_parent"

@@ -68,7 +68,7 @@ public class PlanEvent extends Activity{
 	    			//if click on me, then display the current rating value.
 	    			btnSubmit.setOnClickListener(new OnClickListener() {
 	    		 
-	    				@Override
+	    			
 	    				public void onClick(View v) {
 	    		 
 	    					Toast.makeText(PlanEvent.this,
