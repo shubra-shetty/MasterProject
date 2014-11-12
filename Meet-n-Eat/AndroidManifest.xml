@@ -7,7 +7,7 @@
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
         <activity android:name=".LoginActivity"
-                  android:label="Meet-n-eat">
+                  android:label="Meet-n-Eat">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -22,7 +22,7 @@
         <!-- To Home Page -->
          <activity
       android:name=".HomeActivity"
-      android:label="Welcome...">          
+      android:label="Home Page">          
  </activity>
  
          <!-- To Plan an Event Page -->
@@ -34,5 +34,37 @@
           <activity android:name="com.packagename.FromActivity"></activity>
    <activity android:name="com.packagename.ToActivity"></activity>
    
+   
+   <!--  Add Google Map Library -->
+        <uses-library android:name="com.google.android.maps" />
+        
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- SinglePlaceActivity -->
+        <activity android:name=".SinglePlaceActivity" android:label="Place Details">
+		</activity>
+        
+        <!-- PlacesMapActivity -->
+        <activity android:name=".PlacesMapActivity" android:label="Near Places Map View">
+		</activity>
     </application>
+    
+     <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+ 
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+    
 </manifest>

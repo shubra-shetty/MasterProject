@@ -2,6 +2,8 @@
 <resources>
     <string name="hello">Hello World, LoginActivity!</string>
     <string name="app_name">AndroidLoginAndRegistration</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Meet-n-Eat</string>
     
     <string name="cuisine_prompt">Choose a cuisine</string>
  

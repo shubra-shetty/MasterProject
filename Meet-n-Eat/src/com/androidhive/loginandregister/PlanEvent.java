@@ -1,6 +1,7 @@
 package com.androidhive.loginandregister;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -76,6 +77,9 @@ public class PlanEvent extends Activity{
 	    							String.valueOf(ratingBar.getRating()) + "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) + 
 	    			                "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
 	    							Toast.LENGTH_SHORT).show();
+	    		 
+	    					Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+	    	                startActivity(intent);
 	    		 
 	    				}
 	    		 
