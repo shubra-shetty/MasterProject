@@ -1,0 +1,270 @@
+package com.example.finalproject_try1;
+
+import com.example.finalproject_try1.EMF;
+import com.google.api.server.spi.config.Api;
+import com.google.api.server.spi.config.ApiMethod;
+import com.google.api.server.spi.config.ApiNamespace;
+import com.google.api.server.spi.response.CollectionResponse;
+import com.google.appengine.api.datastore.Cursor;
+import com.google.appengine.api.datastore.KeyFactory;
+import com.google.appengine.datanucleus.query.JPACursorHelper;
+
+import java.util.List;
+
+import javax.annotation.Nullable;
+import javax.inject.Named;
+import javax.persistence.EntityExistsException;
+import javax.persistence.EntityNotFoundException;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.GeoPt;
+
+@Api(name = "mycalculationsendpoint", namespace = @ApiNamespace(ownerDomain = "example.com", ownerName = "example.com", packagePath = "finalproject_try1"))
+public class MyCalculationsEndpoint {
+
+	  private static final String API_KEY = "AIzaSyBogHKUIU46pc_o2gie-Z-HvSzvgNN-7ac";
+	/**
+	 * This method lists all the entities inserted in datastore.
+	 * It uses HTTP GET method and paging support.
+	 *
+	 * @return A CollectionResponse class containing the list of all entities
+	 * persisted and a cursor to the next page.
+	 */
+	@SuppressWarnings({ "unchecked", "unused" })
+	@ApiMethod(name = "listMyCalculations")
+	public CollectionResponse<MyCalculations> listMyCalculations(
+			@Nullable @Named("cursor") String cursorString,
+			@Nullable @Named("limit") Integer limit) {
+
+		EntityManager mgr = null;
+		Cursor cursor = null;
+		List<MyCalculations> execute = null;
+
+		try {
+			System.out.println("Meet-n-Eat: Im here 4.");
+			mgr = getEntityManager();
+			Query query = mgr
+					.createQuery("select from MyCalculations as MyCalculations");
+			if (cursorString != null && cursorString != "") {
+				cursor = Cursor.fromWebSafeString(cursorString);
+				query.setHint(JPACursorHelper.CURSOR_HINT, cursor);
+			}
+
+			if (limit != null) {
+				query.setFirstResult(0);
+				query.setMaxResults(limit);
+			}
+
+			execute = (List<MyCalculations>) query.getResultList();
+			cursor = JPACursorHelper.getCursor(execute);
+			if (cursor != null)
+				cursorString = cursor.toWebSafeString();
+			System.out.println("Meet-n-Eat: Im here 5.");
+			// Tight loop for fetching all entities from datastore and accomodate
+			// for lazy fetch.
+			for (MyCalculations obj : execute)
+				;
+		} finally {
+			mgr.close();
+		}
+		System.out.println("Meet-n-Eat: Im here 6.");
+		return CollectionResponse.<MyCalculations> builder().setItems(execute)
+				.setNextPageToken(cursorString).build();
+	}
+
+	/**
+	 * This method gets the entity having primary key id. It uses HTTP GET method.
+	 *
+	 * @param id the primary key of the java bean.
+	 * @return The entity with primary key id.
+	 */
+	@ApiMethod(name = "getMyCalculations")
+	public MyCalculations getMyCalculations(@Named("id") Long id) {
+		EntityManager mgr = getEntityManager();
+		MyCalculations mycalculations = null;
+		try {
+			mycalculations = mgr.find(MyCalculations.class, id);
+		} finally {
+			mgr.close();
+		}
+		return mycalculations;
+	}
+
+	/**
+	 * This inserts a new entity into App Engine datastore. If the entity already
+	 * exists in the datastore, an exception is thrown.
+	 * It uses HTTP POST method.
+	 *
+	 * @param mycalculations the entity to be inserted.
+	 * @return The inserted entity.
+	 */
+	@ApiMethod(name = "insertMyCalculations")
+	public MyCalculations insertMyCalculations(MyCalculations mycalculations) {
+		EntityManager mgr = getEntityManager();
+		boolean contains = true;
+		Key k;
+		try {
+			k = KeyFactory.createKey("MyCalculations", mycalculations.getName());
+			mycalculations.setKey(k);			
+	//		System.out.println("Meet-n-Eat: Generated key for string : " + KeyFactory.keyToString(k));			
+
+	//		k = mycalculations.getKey();	//Shruthi
+			if(k == null)	{	//Shruthi
+				contains = false;	//Shruthi
+			} else {
+				MyCalculations item = mgr.find(MyCalculations.class, mycalculations.getKey());
+				if (item == null) {
+					contains = false;
+				}
+			}
+			if(contains) {
+				throw new EntityExistsException("Object already exists");
+			}
+	/*		if (containsMyCalculations(mycalculations)) {
+				throw new EntityExistsException("Object already exists");
+			}	*/
+	//		updateMidPoint(mycalculations);	//Calculate the midpoint and update the midPoint fields
+			mgr.persist(mycalculations);
+       	 System.out.println("Meet-n-Eat: Im here 2.");
+		} finally {
+			mgr.close();
+		}
+		System.out.println("Meet-n-Eat: Im here 3.");
+		return mycalculations;
+	}
+
+	/**
+	 * This method is used for updating an existing entity. If the entity does not
+	 * exist in the datastore, an exception is thrown.
+	 * It uses HTTP PUT method.
+	 *
+	 * @param mycalculations the entity to be updated.
+	 * @return The updated entity.
+	 */
+	@ApiMethod(name = "updateMyCalculations")
+	public MyCalculations updateMyCalculations(MyCalculations mycalculations) {
+		EntityManager mgr = getEntityManager();
+		Key k1, k2;
+		boolean doThreePointMidpt = false;
+		GeoPt location = new GeoPt();	
+		boolean contains = true;
+		try {
+			if(mycalculations.getName() != null)
+				doThreePointMidpt = true;
+			k1 = KeyFactory.createKey("MyCalculations", mycalculations.getPlaceId());
+//			System.out.println("Meet-n-Eat: Generated key for string : " + KeyFactory.keyToString(k1));		
+			MyCalculations frndCalc = mgr.find(MyCalculations.class, k1);
+			if (frndCalc == null) {
+				System.out.println("Meet-n-Eat: Find retunrned NULL.");//Shruth	
+				contains = false;
+			}					
+			//contains = containsMyCalculations(mycalculations);
+			if(contains) {
+				System.out.println("Meet-n-Eat: Contains TRUE.");
+				updateMidPoint(mycalculations, frndCalc);		
+			}
+			else
+				throw new EntityNotFoundException("Object does not exist");
+			if(doThreePointMidpt) {				
+				k2 = KeyFactory.createKey("MyCalculations", mycalculations.getName());				
+				MyCalculations frndCalc_2 = mgr.find(MyCalculations.class, k2);
+				if (frndCalc_2 == null) {
+					System.out.println("Meet-n-Eat: Find retunrned NULL.");//Shruth	
+					contains = false;
+				}
+				if(contains) {
+					System.out.println("Meet-n-Eat: Contains TRUE.");
+					MyCalculations tmpCalc = new MyCalculations();
+		//			tmpCalc.setLocation();
+					tmpCalc.setMidpointLat(mycalculations.getMidpointLat());
+					tmpCalc.setMidpointLon(mycalculations.getMidpointLon());
+					updateMidPoint(tmpCalc, frndCalc_2);
+					updateMidPoint(mycalculations, tmpCalc);
+				}
+				else
+					throw new EntityNotFoundException("Object does not exist");
+			}
+				
+		/*	if (!containsMyCalculations(mycalculations)) {
+				throw new EntityNotFoundException("Object does not exist");
+			}	*/
+//			mgr.persist(mycalculations);
+		} finally {
+			mgr.close();
+		}
+		return mycalculations;
+	}
+
+	/**
+	 * This method removes the entity with primary key id.
+	 * It uses HTTP DELETE method.
+	 *
+	 * @param id the primary key of the entity to be deleted.
+	 */
+	@ApiMethod(name = "removeMyCalculations")
+	public void removeMyCalculations(@Named("id") Long id) {
+		EntityManager mgr = getEntityManager();		
+		try {
+			System.out.println("Meet-n-Eat: Im here 7.");
+			MyCalculations mycalculations = mgr.find(MyCalculations.class, id);
+			System.out.println("Meet-n-Eat: Im here 8.");
+			mgr.remove(mycalculations);
+		} finally {
+			mgr.close();
+		}
+		System.out.println("Meet-n-Eat: Im here 9.");
+	}
+
+	private boolean containsMyCalculations(MyCalculations mycalculations) {
+		EntityManager mgr = getEntityManager();
+		boolean contains = true;
+		Key k;
+		try {
+			k = mycalculations.getKey();	//Shruthi
+			if(k == null)	{
+				System.out.println("Meet-n-Eat: Key is NULL.");//Shruth			
+				contains = false;	//Shruthi
+			}
+			MyCalculations item = mgr.find(MyCalculations.class, mycalculations.getKey());
+			if (item == null) {
+				System.out.println("Meet-n-Eat: Find retunrned NULL.");//Shruth	
+				contains = false;
+			}
+			mgr.remove(mycalculations);
+		} finally {
+			mgr.close();
+		}
+		return contains;
+	}
+
+	private static EntityManager getEntityManager() {
+		return EMF.get().createEntityManager();
+	}
+
+private void updateMidPoint(MyCalculations userCalc, MyCalculations frndCalc) {
+	double lat1 = (double) userCalc.getLocation().getLatitude(); // mycalculations.getMidpointLat();
+	double lon1 = (double) userCalc.getLocation().getLongitude();
+	double lat2 = (double) frndCalc.getLocation().getLatitude();	// 37.4075209; // N
+	double lon2 = (double) frndCalc.getLocation().getLongitude();	//-121.9376168; // W
+ 	double dLon = Math.toRadians(lon2 - lon1);
+
+ 	// convert to radians
+ 	lat1 = Math.toRadians(lat1);
+ 	lat2 = Math.toRadians(lat2);
+ 	lon1 = Math.toRadians(lon1);
+
+ 	double Bx = Math.cos(lat2) * Math.cos(dLon);
+ 	double By = Math.cos(lat2) * Math.sin(dLon);
+ 	double tmpLat = Math.atan2(
+ 			Math.sin(lat1) + Math.sin(lat2),
+ 			Math.sqrt((Math.cos(lat1) + Bx) * (Math.cos(lat1) + Bx) + By
+ 					* By));
+ 	double tmpLon = lon1 + Math.atan2(By, Math.cos(lat1) + Bx);
+ 	userCalc.setMidpointLat(Math.toDegrees(tmpLat));
+ 	userCalc.setMidpointLon(Math.toDegrees(tmpLon));		 	
+ 	// print out in degrees
+ 	//System.out.println(midpt_lat + " " + midpt_lon);
+ }	
+}
