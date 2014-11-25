@@ -1,0 +1,169 @@
+package com.example.finalproject_try1;
+import com.example.finalproject_try1.mycalculationsendpoint.Mycalculationsendpoint;
+import com.example.finalproject_try1.mycalculationsendpoint.model.GeoPt;
+import com.example.finalproject_try1.mycalculationsendpoint.model.MyCalculations;
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.http.HttpRequest;
+import com.google.api.client.http.HttpRequestInitializer;
+import com.google.api.client.json.jackson2.JacksonFactory;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.AsyncTask;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.location.Geocoder; 
+import android.location.Address;
+
+import java.io.IOException;
+import java.lang.Exception;
+import java.util.List;
+
+public class RegisterActivity extends Activity {
+	 private Button btnRegister;
+	 private TextView txtName;
+	 private TextView txtAddress;
+	  private Mycalculationsendpoint endpoint = null;
+	  
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // Set View to register.xml
+        setContentView(R.layout.register);
+        
+        TextView loginScreen = (TextView) findViewById(R.id.link_to_login);
+        txtName = (TextView) findViewById(R.id.reg_fullname);
+        txtAddress = (TextView) findViewById(R.id.reg_address);
+             
+        // Listening to Login Screen link
+        loginScreen.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View arg0) {
+				// Switching to Login Screen/closing register screen
+				finish();
+			}
+		});    
+  	 
+ 		 
+  		btnRegister = (Button) findViewById(R.id.btnRegister);
+		 
+			//if click on me, then display the current rating value.
+  		btnRegister.setOnClickListener(new OnClickListener() {
+		 
+			
+				public void onClick(View v) {
+					String valName = txtName.getText().toString();
+					String valAddr = txtAddress.getText().toString();
+					
+					if(valName == null || valAddr == null)
+						System.out.println("Meet-n-Eat ERROR : Valid Name and Address needed for Registration");
+					else
+						System.out.println("Meet-n-Eat: Name = " + valName + " Address = " + valAddr);   
+		 				
+					double lat, lon;
+					Geocoder geoCoder = new Geocoder(getApplicationContext());
+					    if (valAddr != null && !valAddr.isEmpty()) {
+					        try {
+					            List<Address> addressList = geoCoder.getFromLocationName(valAddr, 1);
+					            if (addressList != null && addressList.size() > 0) {
+					                lat = addressList.get(0).getLatitude();
+					                lon = addressList.get(0).getLongitude();
+					            }
+					        } catch (Exception e) {
+					            e.printStackTrace();
+					        } // end catch
+					    } // end if	
+					    
+				Mycalculationsendpoint.Builder builder = new Mycalculationsendpoint.Builder(
+				                AndroidHttp.newCompatibleTransport(), new JacksonFactory(), 	
+				            new HttpRequestInitializer() {
+				                public void initialize(HttpRequest httpRequest) { }
+				              });
+
+				            endpoint = CloudEndpointUtils.updateBuilder(builder).build();
+					//Insert the GPS location into Google datastore on the cloud
+					new MyCalculationsTask(RegisterActivity.this, endpoint).execute();	
+				}
+		 
+			});
+		 
+		  
+    }
+    /**
+     * AsyncTask for calling MyCalculations API to calculate the midPoint (e.g., a store).
+     */
+    private class MyCalculationsTask extends AsyncTask<Void, Void, Void> {
+    	Mycalculationsendpoint myCalcendpoint;
+
+    	    public MyCalculationsTask(Activity activity, Mycalculationsendpoint endpoint) {
+    	      this.myCalcendpoint = endpoint;
+    	    }
+      /**
+       * Calls appropriate CloudEndpoint to indicate that user checked into a place.
+       *
+       * @param params the place where the user is checking in.
+       */
+      @Override
+      protected Void doInBackground(Void... params) {
+        MyCalculations myCalc = new MyCalculations();
+
+        // Set the ID of the store where the user is.
+        float lat =  37.4075209f;
+        float lon =  -121.9376168f;	//end number with f to indicate single precision
+        GeoPt friend = new GeoPt();
+        friend.setLatitude(lat);
+        friend.setLongitude(lon);
+        
+        myCalc.setLocation(friend);// MidpointLat(37.4075209); // N gps.getLatitude());
+     //   myCalc.setMidpointLon(-121.9376168); // W gps.getLongitude());
+        myCalc.setAddress("North Part Apartments San Jose");
+        myCalc.setPlaceId("Shubra");
+        
+//		Key k = KeyFactory.stringToKey(myCalc.getPlaceId());			
+//		System.out.println("Meet-n-Eat: Generated key for string : " + KeyFactory.keyToString(k));
+//		myCalc.setKey(k);
+        
+    	System.out.println("Meet-n-Eat:  " + myCalc.getLocation().getLatitude());
+    	System.out.println("Meet-n-Eat:  " + myCalc.getLocation().getLongitude()); 
+    	System.out.println("Meet-n-Eat:  " + myCalc.getPlaceId());
+  /* 	   CollectionResponseMyCalculations result;
+  	
+      try {
+    	   System.out.println("Meet-n-Eat: Start deleting entries in datastore.");
+           result = myCalcendpoint.listMyCalculations().execute();
+           List<MyCalculations> places = result.getItems();
+           int i = 0;
+           if(places.size() >= 1) {
+        	   for (MyCalculations place : places){
+        		   myCalcendpoint.removeMyCalculations(place.getKey().getId());
+        		  	i++;           
+        	   }
+            	System.out.println("Meet-n-Eat: Number of entries deleted from datastore = " + i);
+           }
+       } catch (IOException e) {
+           // TODO Auto-generated catch block
+         	  System.out.println("Meet-n-Eat: IO Exception.");
+           e.printStackTrace();
+           result = null;
+         }	*/
+       
+   try {        
+  //  	   myCalcendpoint.removeMyCalculations(id);
+        	 System.out.println("Meet-n-Eat: inserMyCalculations() CALL.");        	 
+          myCalcendpoint.insertMyCalculations(myCalc).execute();
+        } catch (IOException e) {
+          // TODO Auto-generated catch block
+        	  System.out.println("Meet-n-Eat: IO Exception.");
+          e.printStackTrace();
+        }
+        System.out.println("Meet-n-Eat: inserMyCalculations() DONE.");
+        return null;
+      }
+    }
+}

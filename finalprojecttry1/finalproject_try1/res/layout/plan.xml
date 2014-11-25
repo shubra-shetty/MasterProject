@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+
+  <RelativeLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:background="#ffffff" >
+
+      <!-- Header  Starts -->
+
+      <LinearLayout
+          android:id="@+id/header"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="@layout/header_gradient"
+          android:paddingBottom="5dip"
+          android:paddingTop="5dip" >
+
+          <!-- Logo Start -->
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dip"
+              android:src="@drawable/logo" />
+          <!-- Logo Ends -->
+      </LinearLayout>
+      <!-- Header Ends -->
+      <!-- Footer Start -->
+
+      <LinearLayout
+          android:id="@+id/footer"
+          android:layout_width="fill_parent"
+          android:layout_height="50dip"
+          android:layout_alignParentBottom="true"
+          android:background="@layout/footer_repeat"
+          android:orientation="horizontal" >
+      </LinearLayout>
+      <!-- Footer Ends -->
+
+
+      <!-- Plan Form -->
+
+      <LinearLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/header"
+          android:orientation="vertical"
+          android:padding="10dip" >
+
+          <!-- Welcome Label -->
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Plan an event"
+              android:textColor="#372c24" />
+          
+              <TextView
+        android:id="@+id/lblRateMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rate Me"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+          
+            <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="2.0" />
+            
+         <Spinner
+             android:id="@+id/spinner1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:entries="@array/cuisine_arrays"
+             android:prompt="@array/cuisine_arrays" />
+ 
+    	<Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:entries="@array/type_arrays"
+        android:prompt="@string/type_prompt" />
+            
+             <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit" />
+ 
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+ 
+        <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Result : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/txtRatingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+         </LinearLayout>    
+      </LinearLayout>
+      <!-- Plan Form Ends -->
+
+    
+
+  </RelativeLayout>
+
+</ScrollView>
