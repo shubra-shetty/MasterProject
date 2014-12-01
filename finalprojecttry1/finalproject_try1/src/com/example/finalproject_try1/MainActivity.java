@@ -8,7 +8,10 @@ import android.os.AsyncTask;
 import android.widget.TextView;
 
 import java.io.IOException;
+<<<<<<< HEAD
 import java.text.DecimalFormat;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 import java.util.List;
 
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -32,7 +35,10 @@ import java.util.HashMap;
 import android.app.ProgressDialog;
 import android.util.Log;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.support.v4.app.FragmentActivity;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,7 +50,11 @@ import android.widget.SimpleAdapter;
 import com.example.finalproject_try1.mycalculationsendpoint.model.GeoPt;
 // appengine.api.datastore.GeoPt;
 
+<<<<<<< HEAD
 public class MainActivity extends FragmentActivity {
+=======
+public class MainActivity extends Activity {
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 //	  private TextView resultsList;
 	  private Mycalculationsendpoint endpoint = null;
 	  private MessageEndpoint messageEndpoint = null;
@@ -88,8 +98,11 @@ public class MainActivity extends FragmentActivity {
 		public double midpt_lon ;//= -121.9376168;
 		  private String friend1;
 		  private String friend2;
+<<<<<<< HEAD
 		  private String ratingbar;
 		  private String typec;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,8 +114,11 @@ public class MainActivity extends FragmentActivity {
 		// Users current geo location
 		friend1 = i.getStringExtra("friend1");
 		friend2 = i.getStringExtra("friend2");
+<<<<<<< HEAD
 		ratingbar=i.getStringExtra("rating");
 		typec=i.getStringExtra("typec");
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
     //---- Meet-n-Eat client code below -------
      	cd = new ConnectionDetector(getApplicationContext());
 
@@ -321,7 +337,10 @@ public class MainActivity extends FragmentActivity {
    		System.out.println("Meet-n-Eat:  " + myCalc.getPlaceId() + myCalc.getMidpointLat() + myCalc.getMidpointLon());
    		midpt_lat = myCalc.getMidpointLat();
     	midpt_lon = myCalc.getMidpointLon();
+<<<<<<< HEAD
     	System.out.println("Added to test..............."+ midpt_lat+ midpt_lon);
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
          return result;
       }
 
@@ -390,6 +409,7 @@ public class MainActivity extends FragmentActivity {
 		 * getting Places JSON
 		 * */
 		protected String doInBackground(String... args) {
+<<<<<<< HEAD
 			/*
 			// Getting intent data
 						Intent i = getIntent();
@@ -400,6 +420,8 @@ public class MainActivity extends FragmentActivity {
 						//String cuisine = choices.getString("cuisine");
 						String typec = choices.getString("typec");*/
 						
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 			// creating Places class object
 			googlePlaces = new GooglePlaces();
 			
@@ -408,6 +430,7 @@ public class MainActivity extends FragmentActivity {
 				// If you want all types places make it as null
 				// Check list of types supported by google
 				// 
+<<<<<<< HEAD
 				//String types = "cafe|restaurant"; // Listing places only cafes, restaurants
 				
 				String types = typec; // List types based on user preference
@@ -420,11 +443,18 @@ public class MainActivity extends FragmentActivity {
 				
 				//added for midpt
 				//DecimalFormat df = new DecimalFormat("#.######");
+=======
+				String types = "cafe|restaurant"; // Listing places only cafes, restaurants
+				
+				// Radius in meters - increase this value if you don't find any places
+				double radius = 1000; // 1000 meters 
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 				
 				// get nearest places
 	//			nearPlaces = googlePlaces.search(gps.getLatitude(),
 	//					gps.getLongitude(), radius, types);
 				System.out.println("Meet-n-Eat: LoadPlaces::googlesearch() CALL.");
+<<<<<<< HEAD
 				System.out.println("midpts  .... "+ midpt_lat + midpt_lon);
 				//double mlat= Double.parseDouble(df.format(midpt_lat));
 				//double mlong= Double.parseDouble(df.format(midpt_lon));
@@ -434,6 +464,10 @@ public class MainActivity extends FragmentActivity {
 				//nearPlaces = googlePlaces.search(mlat, mlong, radius, types,rating);
 				//nearPlaces = googlePlaces.search(37.42680800243142,-121.94345818746288, radius, types,rating);
 				//nearPlaces = googlePlaces.search(37.4075209,-121.9376168, radius, types,rating);
+=======
+				nearPlaces = googlePlaces.search(midpt_lat, midpt_lon, radius, types);
+
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

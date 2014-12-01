@@ -59,13 +59,20 @@
         "body" : "autoTemplate(backendResponse)"
       }
     },
+<<<<<<< HEAD
     "mycalculationsendpoint.listMyCalculations" : {
       "path" : "mycalculations",
       "httpMethod" : "GET",
+=======
+    "mycalculationsendpoint.removeMyCalculations" : {
+      "path" : "mycalculations/{id}",
+      "httpMethod" : "DELETE",
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
       "authLevel" : "NONE",
       "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
       "audiences" : [ ],
       "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+<<<<<<< HEAD
       "rosyMethod" : "com.example.finalproject_try1.MyCalculationsEndpoint.listMyCalculations",
       "request" : {
         "parameters" : {
@@ -76,33 +83,67 @@
           "limit" : {
             "type" : "int32",
             "required" : false
-          }
-        },
-        "body" : "empty"
-      },
-      "response" : {
-        "body" : "autoTemplate(backendResponse)"
-      }
-    },
-    "mycalculationsendpoint.removeMyCalculations" : {
-      "path" : "mycalculations/{id}",
-      "httpMethod" : "DELETE",
-      "authLevel" : "NONE",
-      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
-      "audiences" : [ ],
-      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+=======
       "rosyMethod" : "com.example.finalproject_try1.MyCalculationsEndpoint.removeMyCalculations",
       "request" : {
         "parameters" : {
           "id" : {
             "type" : "int64",
             "required" : true
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
           }
         },
         "body" : "empty"
       },
       "response" : {
+<<<<<<< HEAD
+        "body" : "autoTemplate(backendResponse)"
+      }
+    },
+    "mycalculationsendpoint.removeMyCalculations" : {
+      "path" : "mycalculations/{id}",
+      "httpMethod" : "DELETE",
+=======
         "body" : "empty"
+      }
+    },
+    "mycalculationsendpoint.listMyCalculations" : {
+      "path" : "mycalculations",
+      "httpMethod" : "GET",
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
+      "authLevel" : "NONE",
+      "scopes" : [ "https://www.googleapis.com/auth/userinfo.email" ],
+      "audiences" : [ ],
+      "clientIds" : [ "292824132082.apps.googleusercontent.com" ],
+<<<<<<< HEAD
+      "rosyMethod" : "com.example.finalproject_try1.MyCalculationsEndpoint.removeMyCalculations",
+      "request" : {
+        "parameters" : {
+          "id" : {
+            "type" : "int64",
+            "required" : true
+=======
+      "rosyMethod" : "com.example.finalproject_try1.MyCalculationsEndpoint.listMyCalculations",
+      "request" : {
+        "parameters" : {
+          "cursor" : {
+            "type" : "string",
+            "required" : false
+          },
+          "limit" : {
+            "type" : "int32",
+            "required" : false
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
+          }
+        },
+        "body" : "empty"
+      },
+      "response" : {
+<<<<<<< HEAD
+        "body" : "empty"
+=======
+        "body" : "autoTemplate(backendResponse)"
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
       }
     },
     "mycalculationsendpoint.getMyCalculations" : {
@@ -142,9 +183,12 @@
           "name" : {
             "type" : "string"
           },
+<<<<<<< HEAD
           "email" : {
             "type" : "string"
           },
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
           "address" : {
             "type" : "string"
           },
@@ -237,13 +281,21 @@
           "$ref" : "MyCalculations"
         }
       },
+<<<<<<< HEAD
+=======
+      "com.example.finalproject_try1.MyCalculationsEndpoint.removeMyCalculations" : {
+      },
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
       "com.example.finalproject_try1.MyCalculationsEndpoint.listMyCalculations" : {
         "response" : {
           "$ref" : "CollectionResponse_MyCalculations"
         }
       },
+<<<<<<< HEAD
       "com.example.finalproject_try1.MyCalculationsEndpoint.removeMyCalculations" : {
       },
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
       "com.example.finalproject_try1.MyCalculationsEndpoint.getMyCalculations" : {
         "response" : {
           "$ref" : "MyCalculations"

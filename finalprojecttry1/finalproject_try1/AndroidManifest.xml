@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.example.finalproject_try1">
 
+<<<<<<< HEAD
     <uses-sdk android:minSdkVersion="11" android:targetSdkVersion="19"/>
 
         
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+=======
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="19"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
    <permission android:name="com.example.finalproject_try1.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
 
    <uses-permission android:name="com.example.finalproject_try1.permission.C2D_MESSAGE"/>
@@ -12,11 +18,15 @@
    <uses-permission android:name="android.permission.WAKE_LOCK"/>
    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+<<<<<<< HEAD
    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
      <!-- Network State Permissions -->
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     
     <!-- Access Location -->
+<<<<<<< HEAD
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     
@@ -27,6 +37,12 @@
     
    <application android:allowBackup="true" android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity" android:label="Login">
+=======
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    
+   <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".LoginActivity">
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -45,9 +61,15 @@
             </intent-filter>
         </receiver>
     
+<<<<<<< HEAD
         <activity android:launchMode="singleTop" android:name=".RegisterActivity" android:label="Register New Account"/>
                <!-- To Home Page -->
          <activity android:name=".HomeActivity" android:label="Home">   
+=======
+        <activity android:launchMode="singleTop" android:name=".RegisterActivity"/>
+               <!-- To Home Page -->
+         <activity android:name=".HomeActivity" android:label="Home Page">   
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
  </activity>
  
          <!-- To Plan an Event Page -->
@@ -70,6 +92,7 @@
 		</activity>
         
         <!-- PlacesMapActivity -->
+<<<<<<< HEAD
         <activity android:name=".PlacesMapActivity" android:label="Places Map View">
 		</activity>
 		
@@ -83,6 +106,10 @@
        android:value="@integer/google_play_services_version" />
         
         
+=======
+        <activity android:name=".PlacesMapActivity" android:label="Near Places Map View">
+		</activity>
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
     </application>
     
  

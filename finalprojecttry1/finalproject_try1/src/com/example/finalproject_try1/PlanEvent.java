@@ -53,7 +53,11 @@ public class PlanEvent extends Activity{
 	    	 public void addListenerOnRatingBar() {
 	    		 
 	    			ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+<<<<<<< HEAD
 	    			//txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
+=======
+	    			txtRatingValue = (TextView) findViewById(R.id.txtRatingValue);
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	    		 
 	    			//if rating value is changed,
 	    			//display the current rating value in the result (textview) automatically
@@ -70,7 +74,11 @@ public class PlanEvent extends Activity{
 	    		  public void addListenerOnButton() {
 	    		 
 	    			ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+<<<<<<< HEAD
 	    			//spinner1 = (Spinner) findViewById(R.id.spinner1);
+=======
+	    			spinner1 = (Spinner) findViewById(R.id.spinner1);
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	    			spinner2 = (Spinner) findViewById(R.id.spinner2);
 	    			btnSubmit = (Button) findViewById(R.id.btnSubmit);
 	    		 
@@ -80,15 +88,24 @@ public class PlanEvent extends Activity{
 	    			
 	    				public void onClick(View v) {
 	    		 
+<<<<<<< HEAD
 	    					/*Toast.makeText(PlanEvent.this,
 	    							"OnClickListener : " + 
 	    							String.valueOf(ratingBar.getRating()) + "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) + 
 	    			                "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
 	    							Toast.LENGTH_SHORT).show();*/
+=======
+	    					Toast.makeText(PlanEvent.this,
+	    							"OnClickListener : " + 
+	    							String.valueOf(ratingBar.getRating()) + "\nSpinner 1 : "+ String.valueOf(spinner1.getSelectedItem()) + 
+	    			                "\nSpinner 2 : "+ String.valueOf(spinner2.getSelectedItem()),
+	    							Toast.LENGTH_SHORT).show();
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	    		 
 	    					Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 	    				 	intent.putExtra("friend1", friend1);
 	    					intent.putExtra("friend2", friend2);
+<<<<<<< HEAD
 	    					intent.putExtra("rating",String.valueOf(ratingBar.getRating()));
 	    					intent.putExtra("typec",String.valueOf(spinner2.getSelectedItem()));
 	    					
@@ -106,6 +123,8 @@ public class PlanEvent extends Activity{
 	    					//added to pass values to the next activity--end
 	    					
 	    					*/
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	    					startActivity(intent);
 	    		 
 	    				}
@@ -116,8 +135,13 @@ public class PlanEvent extends Activity{
 	    		  
 	    		  
 	    		  public void addListenerOnSpinnerItemSelection() {
+<<<<<<< HEAD
 	    				//spinner1 = (Spinner) findViewById(R.id.spinner1);
 	    				//spinner1.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+=======
+	    				spinner1 = (Spinner) findViewById(R.id.spinner1);
+	    				spinner1.setOnItemSelectedListener(new CustomOnItemSelectedListener());
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	    				
 	    				spinner2 = (Spinner) findViewById(R.id.spinner2);
 	    				spinner2.setOnItemSelectedListener(new CustomOnItemSelectedListener());

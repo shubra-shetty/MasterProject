@@ -21,9 +21,12 @@ import javax.persistence.Id;
 	  private String placeId;
 
 	  private String name;
+<<<<<<< HEAD
 	  
 	  //added
 	  private String email;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 
 	  private String address;
 
@@ -55,6 +58,7 @@ import javax.persistence.Id;
 	    this.name = name;
 	  }
 
+<<<<<<< HEAD
 	  //added
 	  
 	  public String getEmail() {
@@ -65,6 +69,8 @@ import javax.persistence.Id;
 		    this.email = email;
 		  }
 	  
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	  public String getAddress() {
 	    return address;
 	  }

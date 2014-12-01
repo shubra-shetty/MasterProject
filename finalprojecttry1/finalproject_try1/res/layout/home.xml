@@ -32,19 +32,31 @@
   				android:layout_alignParentBottom="true">
   		</LinearLayout>
   		<!-- Footer Ends -->
+<<<<<<< HEAD
+=======
+  		
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
   		<!-- Home Form -->
 		<LinearLayout
 		  android:orientation="vertical"
 		  android:layout_width="match_parent"
 		  android:layout_height="wrap_content"
 		  android:padding="10dip"
+<<<<<<< HEAD
 		  android:layout_below="@id/header" >
+=======
+		  android:layout_below="@id/header">
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 		  <!--  Welcome Label -->
 		  <TextView android:layout_width="fill_parent"
 		  		android:layout_height="wrap_content"
 		  		android:textColor="#372c24"
+<<<<<<< HEAD
 		  		android:text="Choose Friends"
 		  		android:textAppearance="?android:attr/textAppearanceMedium" />
+=======
+		  		android:text="Choose your friends..."/>
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 		   
 		   <ListView android:id="@+id/friends"
         android:layout_width="match_parent"

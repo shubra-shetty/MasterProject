@@ -1,4 +1,8 @@
+<<<<<<< HEAD
   <classpathentry kind="lib" path="libs/google-api-services-mycalculationsendpoint-v1-rev20141129121106-1.18.0-rc.jar" sourcepath="libs-sources/google-api-services-mycalculationsendpoint-v1-rev20141129121106-1.18.0-rc-sources.jar"/>
+=======
+  <classpathentry kind="lib" path="libs/google-api-services-mycalculationsendpoint-v1-rev20141121063027-1.18.0-rc.jar" sourcepath="libs-sources/google-api-services-mycalculationsendpoint-v1-rev20141121063027-1.18.0-rc-sources.jar"/>
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
   <classpathentry kind="lib" path="libs/google-api-client-1.18.0-rc.jar" sourcepath="libs-sources/google-api-client-1.18.0-rc-sources.jar"/>
   <classpathentry kind="lib" path="libs/google-api-client-android-1.18.0-rc.jar" sourcepath="libs-sources/google-api-client-android-1.18.0-rc-sources.jar"/>
   <classpathentry kind="lib" path="libs/google-api-client-appengine-1.18.0-rc.jar" sourcepath="libs-sources/google-api-client-appengine-1.18.0-rc-sources.jar"/>

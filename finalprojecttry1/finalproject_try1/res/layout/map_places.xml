@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
@@ -10,3 +11,13 @@
         android:layout_height="match_parent"/>
  
 </RelativeLayout>
+=======
+<com.google.android.maps.MapView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:apiKey="AIzaSyBM_-33-FPe9WAf6D49bCietEpPSVszRcs"
+/>
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc

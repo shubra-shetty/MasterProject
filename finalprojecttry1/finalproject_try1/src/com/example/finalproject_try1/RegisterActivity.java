@@ -29,12 +29,18 @@ public class RegisterActivity extends Activity {
 	 private Button btnRegister;
 	 private TextView txtName;
 	 private TextView txtAddress;
+<<<<<<< HEAD
 	 private TextView txtEmail;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	  private Mycalculationsendpoint endpoint = null;
 	  double userLat, userLong;
 	  String valName;
 	  String valAddr;
+<<<<<<< HEAD
 	  String valEmail;
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	  
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -44,8 +50,11 @@ public class RegisterActivity extends Activity {
         
         TextView loginScreen = (TextView) findViewById(R.id.link_to_login);
         txtName = (TextView) findViewById(R.id.reg_fullname);
+<<<<<<< HEAD
         //added
       //  txtEmail = (TextView) findViewById(R.id.reg_email);
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
         txtAddress = (TextView) findViewById(R.id.reg_address);
              
         // Listening to Login Screen link
@@ -67,6 +76,7 @@ public class RegisterActivity extends Activity {
 				public void onClick(View v) {
 					valName = txtName.getText().toString();
 					valAddr = txtAddress.getText().toString();
+<<<<<<< HEAD
 					//added
 					//valEmail= txtEmail.getText().toString();
 					
@@ -75,6 +85,13 @@ public class RegisterActivity extends Activity {
 						System.out.println("Meet-n-Eat ERROR : Valid Name, Email and Address needed for Registration");
 					else
 						System.out.println("Meet-n-Eat: Name = " + valName + " Address = " + valAddr + "Email = " + valEmail);   
+=======
+					
+					if(valName == null || valAddr == null)
+						System.out.println("Meet-n-Eat ERROR : Valid Name and Address needed for Registration");
+					else
+						System.out.println("Meet-n-Eat: Name = " + valName + " Address = " + valAddr);   
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 		 			//if(!RegisterScreenHasErrors()){ 	
 					//Get the Lat/Long from the user Address
 					Geocoder geoCoder = new Geocoder(getApplicationContext());
@@ -138,8 +155,11 @@ public class RegisterActivity extends Activity {
      //   myCalc.setMidpointLon(-121.9376168); // W gps.getLongitude());
         myCalc.setAddress(valAddr);
         myCalc.setName(valName); 
+<<<<<<< HEAD
        // myCalc.setEmail(valEmail);
         
+=======
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
         
 //		Key k = KeyFactory.stringToKey(myCalc.getPlaceId());			
 //		System.out.println("Meet-n-Eat: Generated key for string : " + KeyFactory.keyToString(k));

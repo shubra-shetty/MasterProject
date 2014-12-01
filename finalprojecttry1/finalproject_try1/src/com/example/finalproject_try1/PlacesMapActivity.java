@@ -1,5 +1,6 @@
 package com.example.finalproject_try1;
 
+<<<<<<< HEAD
 import android.content.Intent;
 //import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -36,10 +37,28 @@ public class PlacesMapActivity extends FragmentActivity
 	//added for v2
 	GoogleMap mGoogleMap;
 	
+=======
+import java.util.List;
+
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.util.Log;
+
+import com.google.android.maps.GeoPoint;
+import com.google.android.maps.MapActivity;
+import com.google.android.maps.MapController;
+import com.google.android.maps.MapView;
+import com.google.android.maps.Overlay;
+import com.google.android.maps.OverlayItem;
+
+public class PlacesMapActivity extends MapActivity {
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	// Nearest places
 	PlacesList nearPlaces;
 
 	// Map view
+<<<<<<< HEAD
 //	MapView mapView;
 	
 	//googlemap
@@ -60,6 +79,22 @@ public class PlacesMapActivity extends FragmentActivity
 	
 	//added for directions
 	private MarkerOptions markers;
+=======
+	MapView mapView;
+
+	// Map overlay items
+	List<Overlay> mapOverlays;
+
+	AddItemizedOverlay itemizedOverlay;
+
+	GeoPoint geoPoint;
+	// Map controllers
+	MapController mc;
+	
+	double latitude;
+	double longitude;
+	OverlayItem overlayitem;
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -75,6 +110,7 @@ public class PlacesMapActivity extends FragmentActivity
 		
 		// Nearplaces list
 		nearPlaces = (PlacesList) i.getSerializableExtra("near_places");
+<<<<<<< HEAD
 		
 		//added for v2
 		double dblat= Double.parseDouble(user_latitude);
@@ -148,6 +184,13 @@ if (nearPlaces.results != null) {
 
 		//mapOverlays = mapView.getOverlays();
 		//mapOverlays = mV.getOverlays();
+=======
+
+		mapView = (MapView) findViewById(R.id.mapView);
+		mapView.setBuiltInZoomControls(true);
+
+		mapOverlays = mapView.getOverlays();
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 		
 		// Geopoint to place on map
 		geoPoint = new GeoPoint((int) (Double.parseDouble(user_latitude) * 1E6),
@@ -220,13 +263,20 @@ if (nearPlaces.results != null) {
 		mc.animateTo(new GeoPoint((maxLat + minLat)/2, (maxLong + minLong)/2 ));
 		mapView.postInvalidate();
 
+<<<<<<< HEAD
 	}*/
 
 //	@Override
+=======
+	}
+
+	@Override
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
 	protected boolean isRouteDisplayed() {
 		return false;
 	}
 
+<<<<<<< HEAD
 
 
 
@@ -263,3 +313,7 @@ if (nearPlaces.results != null) {
     }*/
 
 }
+=======
+}
+
+>>>>>>> e83148c69b6179eee336db2be81a0fdb78299acc
