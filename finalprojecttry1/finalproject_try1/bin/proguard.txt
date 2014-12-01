@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:36
+-keep class com.example.finalproject_try1.GCMIntentService { <init>(...); }
+
+# view AndroidManifest.xml #generated:50
+-keep class com.example.finalproject_try1.HomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.example.finalproject_try1.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class com.example.finalproject_try1.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:73
+-keep class com.example.finalproject_try1.PlacesMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.example.finalproject_try1.PlanEvent { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class com.example.finalproject_try1.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.example.finalproject_try1.SinglePlaceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.google.android.gcm.GCMBroadcastReceiver { <init>(...); }
+
+# view res/layout/map_places.xml #generated:6
+-keep class com.google.android.gms.maps.MapFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.packagename.FromActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.packagename.ToActivity { <init>(...); }
+

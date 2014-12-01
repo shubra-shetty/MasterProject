@@ -1,0 +1,1211 @@
+[
+  {
+    "symbolicName": "gcm-server",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e4e541020887027b9b63c5a4ab821b846d1eb9d9",
+    "jarFileModificationDate": "2014-11-19T13:48:18.636-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1-AppEngine\\war\\WEB-INF\\lib\\gcm-server.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.appengine.datanucleus",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "82202384a1cf0115e5a024361b15d0fb3c24b63d",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\datanucleus-appengine-2.1.2.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-jdo-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8d614f60796cb09ac0ce141a1940c1a94847c85b",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-jdo-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-api-1.0-sdk-1.9.15",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0f40ddbf214e64a4b483bc4ac8d9343988e53a39",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\user\\appengine-api-1.0-sdk-1.9.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f4150db54a3200189411d612ea21ce4a8a614bb3",
+    "jarFileModificationDate": "2013-11-08T18:37:06.895-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\zipfs.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4403cf280affe5cba5e0fa754f1056c4b2de7f19",
+    "jarFileModificationDate": "2013-11-08T18:37:08.866-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\localedata.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "quick-json-1.0.2.3",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "6c4f770696a76cac01f2ce2c68de239a6bc072bd",
+    "jarFileModificationDate": "2014-11-19T17:53:01.768-08:00",
+    "location": "C:\\Users\\Shruthi\\Downloads\\quick-json-1.0.2.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsr305-1.3.9",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jsr305-1.3.9.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "repackaged-appengine-jasper-el-6.0.29",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d1cb756ac654e1e6461fddcf9df6038f6bd22e5a",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp\\repackaged-appengine-jasper-el-6.0.29.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "asm-4.0",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "659add6efc75a4715d738e73f07505246edf4d66",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\asm-4.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2e66da15851f9f5b5079228f856c2f090ba98c38",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\gson-2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpcore",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e813b8722c387b22e1adccf7914729db09bcb4a9",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\httpcore-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "repackaged-appengine-jasper-6.0.29",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a8323563496877401755fde1c8c39dd7c98c334a",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp\\repackaged-appengine-jasper-6.0.29.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "repackaged-appengine-tomcat-juli-6.0.29",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2a029b6fac8d10c86687bc586fc1e4be80277312",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp\\repackaged-appengine-tomcat-juli-6.0.29.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d6030b729a2c0f277bbd65aecc53b0156123c1d7",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-jackson2-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "10eb3b8d9551a048ba3ec1b2a5ba7524cd01a45a",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-http-client-jackson2-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "15feacc39aa29e06a63bf9041c6e5898f06bade9",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-api-client-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.httpcomponents.httpclient",
+    "version": {
+      "major": 4,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1d7d28fa738bdbfe4fbd895d9486308999bdf440",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\httpclient-4.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-appengine-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f69f947cb133dd6aa39015f7fc270bd9afcf8335",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-appengine-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-oauth-client-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "84bb5a223e42a5ba974ad51c9712253e662aa1bb",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-oauth-client-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "97e3bcb13f325218fcf9d2286aa7ce6e8c231b7a",
+    "jarFileModificationDate": "2013-11-08T18:37:06.894-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunjce_provider.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-http-client-jdo-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e04b69acdd266c07a104ad8adfad87ae85b3e7fb",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-http-client-jdo-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "repackaged-appengine-ant-launcher-1.7.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c639bfb44abc9da61916e248958dcd0a4f4a155b",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp\\repackaged-appengine-ant-launcher-1.7.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "gcm",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c62336e408d6dc3998013f3a4419f1895ad61b6b",
+    "jarFileModificationDate": "2014-11-19T13:48:37.765-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\gcm.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "el-api",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fc17ef7c713c11f9f1f7e90d41069c8a041fc0c8",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\el-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "8c3af35a458e5430f9d2f9bf9f12117673500ba0",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-protobuf-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b98f89c0de8fd972e39cea808972ec4be355367b",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-protobuf-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "usb",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d9f9121b2812a33450b89b96ab5de908c16e3a8e",
+    "jarFileModificationDate": "2014-11-12T17:06:12.767-08:00",
+    "location": "C:\\adt-bundle-windows-x86_64-20140321\\sdk\\add-ons\\addon-google_apis-google-19\\libs\\usb.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.mortbay.jetty.util",
+    "version": {
+      "major": 6,
+      "minor": 1,
+      "micro": 26,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e5642fe0399814e1687d55a3862aa5a3417226a9",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jetty-util-6.1.26.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jackson-core-asl",
+    "version": {
+      "major": 1,
+      "minor": 9,
+      "micro": 11,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e32303ef8bd18a5c9272780d49b81c95e05ddf43",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jackson-core-asl-1.9.11.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-xml-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e23e980be99d0f87175a180929285d055b9c6a38",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-xml-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-oauth-client-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1c9842ee2c931ac6865304025e20b68be65c427b",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-oauth-client-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jdo2-api-2.3-eb",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "ec6b839251fb235a86ccd23adc4fc62dab07a7d8",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jdo2-api-2.3-eb.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsr305-1.3.9",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\jsr305-1.3.9.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f831655c50b92c41e366442d09511ea84270c45e",
+    "jarFileModificationDate": "2013-11-08T18:37:06.929-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jce.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-api-client-gson-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "414f2a75fa1987e8d0ee10396c660744bbd8ca4f",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-gson-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "commons-logging",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5043bfebc3db072ed80fbd362e7caf00e885d8ae",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\commons-logging-1.1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a3d1a9689f1c8e36ab64fb669df92076771c42f2",
+    "jarFileModificationDate": "2013-11-08T18:37:06.894-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunmscapi.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.datanucleus",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "7d242e12ee2171a092b6ba1da6a03f8872f422d7",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\datanucleus-core-3.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-gson-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "1681d7019075f7217875b3a16c425582b476a75a",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-http-client-gson-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.core.jackson-core",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f6c3aed1cdfa21b5c1737c915186ea93a95a58bd",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\jackson-core-2.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "net.sf.jsr107cache.jsr107cache",
+    "version": {
+      "major": 1,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "193a0dca92c221ebf45c7181f00e5db967721c08",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\jsr107\\v1\\jsr107cache-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.gson",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2e66da15851f9f5b5079228f856c2f090ba98c38",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\gson-2.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jsp-api",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "96c0fc48244431b5fae79a4882e3c9e365d8e1b8",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-android-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c6ef8e9d839d3aa873651214975c9ce4cbe1709b",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-android-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.apache.geronimo.specs.geronimo-jpa_2.0_spec",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5db1ae9b2de405fd9dcfa0af373cbe0183f65d58",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\geronimo-jpa_2.0_spec-1.0.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-appengine-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "aacc6e352ec8b5ea90bab5aed1faa432a362e039",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-appengine-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4b49dbbd63bac98e1b02fd5ad398dea471cd41ed",
+    "jarFileModificationDate": "2013-11-08T18:37:06.986-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\resources.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "servlet-api",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "25043e1a2778fc904704dbb51d055a81fee7c191",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\servlet-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "maps",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c9add27cfbfed8be266c82d298ef8965be4fd331",
+    "jarFileModificationDate": "2014-11-12T17:06:12.767-08:00",
+    "location": "C:\\adt-bundle-windows-x86_64-20140321\\sdk\\add-ons\\addon-google_apis-google-19\\libs\\maps.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.google.protobuf.protobuf-java",
+    "version": {
+      "major": 2,
+      "minor": 4,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "0c589509ec6fd86d5d2fda37e07c08538235d3b9",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\protobuf-java-2.4.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-api-labs",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d4f149ef798b60c8ac1e40c75d9f4bf783b10bc8",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\appengine-api-labs\\v1\\appengine-api-labs.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e5589ea004bd27f096792629eee6e30d3f25fe2c",
+    "jarFileModificationDate": "2013-11-08T18:37:08.840-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jsse.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "appengine-tools-api",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "df9ee1ad8861ffb87dfd0d5160abcdf4fcbbd47a",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\appengine-tools-api.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-xml-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "b924fcd119f0c451df702b50616a717f436777ee",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-xml-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a22ccb0236f5d475302a3f538d923d6cf05c68cd",
+    "jarFileModificationDate": "2013-11-08T18:37:06.861-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\access-bridge-64.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "org.datanucleus.api.jdo",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2b516725909217520c9c55b591b5e48ab3a0dc64",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\datanucleus-api-jdo-3.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jta-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2ca09f0b36ca7d71b762e14ea2ff09d5eac57558",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\jta-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-jsr107cache-1.9.15",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "71948fd0c8c8f77f7b86230dead1f02bc29de54e",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\jsr107\\v1\\appengine-jsr107cache-1.9.15.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.mortbay.jetty.server",
+    "version": {
+      "major": 6,
+      "minor": 1,
+      "micro": 26,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2f546e289fddd5b1fab1d4199fbb6e9ef43ee4b0",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jetty-6.1.26.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-jackson2-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "044421ad08991f7508d910416e55a01ad0574fe7",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-jackson2-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-oauth-client-appengine-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "841a7c75dbb6eb6f85ad31a5d2eb2982c2fb1f31",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-oauth-client-appengine-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "5978bc159419ed07f2a57488d10e91f4fd1e3c40",
+    "jarFileModificationDate": "2013-11-08T18:37:06.862-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\dnsns.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "javax.jdo",
+    "version": {
+      "major": 3,
+      "minor": 0,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "058e7a538e020b73871e232eeb064835fd98a492",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\jdo-api-3.0.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-servlet-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "648cec8d3eccd9f99147736057955af9cb797e83",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-servlet-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android-support-v4",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a13f8fe2c278737e2f0b6fcf00f6b2ae4034aacf",
+    "jarFileModificationDate": "2014-11-19T16:21:54.017-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\android-support-v4.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "repackaged-appengine-ant-1.7.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "070e56fd7fe9dba38f68255310f593fc3d569828",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\jsp\\repackaged-appengine-ant-1.7.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-endpoints",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dd2c2027a8821b2b36a84a563704cd7705652e34",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\appengine-endpoints\\v1\\appengine-endpoints.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "effects",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "64d442878c143bfa71dfb52fd69d43a0a6a2c531",
+    "jarFileModificationDate": "2014-11-12T17:06:12.767-08:00",
+    "location": "C:\\adt-bundle-windows-x86_64-20140321\\sdk\\add-ons\\addon-google_apis-google-19\\libs\\effects.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "3800223b66f57bc4daff4bbd398a65020d901d82",
+    "jarFileModificationDate": "2013-11-08T18:37:06.931-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\jfr.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-api-client-java6-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "c1f8f1ca18a16a9121f0d3955dc1ed2f8a850732",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-java6-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "xpp3-1.1.4c",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9b988ea84b9e4e9f1874e390ce099b8ac12cfff5",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\xpp3-1.1.4c.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-local-runtime-shared",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "fa7f9ec7a24326c2c809c8be2d3908869fc94cae",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\shared\\appengine-local-runtime-shared.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-jackson2-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a9e93a7b00a0055b4ec7be96df40e18303ecbcfc",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-jackson2-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "org.datanucleus.api.jpa",
+    "version": {
+      "major": 3,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "09866db180ef911990dbb1f82ce7015d8135d40b",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\datanucleus\\v2\\datanucleus-api-jpa-3.1.3.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-protobuf-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d5221b4be446fbc5fb8d075c1e8a78fc30d3d403",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-protobuf-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "appengine-endpoints-deps",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "a4377a2cae222e13490cda37cf67efaef7a820ed",
+    "jarFileModificationDate": "2014-10-24T17:25:22-07:00",
+    "location": "C:\\eclipse\\plugins\\com.google.appengine.eclipse.sdkbundle_1.9.15\\appengine-java-sdk-1.9.15\\lib\\opt\\user\\appengine-endpoints\\v1\\appengine-endpoints-deps.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "95dc9053062d68cde4e8c38494cc63aefd7b0a42",
+    "jarFileModificationDate": "2013-11-08T18:37:06.893-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\sunec.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-oauth-client-java6-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "97b0317ffe6d6a647f3cfd27d7ebab658f0e11b0",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-oauth-client-java6-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-android-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "d4c790c63bcdd9a34f6080c968c70d8af0f2cd2f",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-http-client-android-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-api-client-android-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "4f30a5725d24b30b35dfeb0278a29233904e19c1",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-api-client-android-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-gson-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "dc9a7c1cd0aa752dd82d13f871a712b6c43b47c8",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-gson-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "transaction-api-1.1",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2ca09f0b36ca7d71b762e14ea2ff09d5eac57558",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\transaction-api-1.1.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "28ad63fc2152ff90eba4b7a921dd3f6617acf6f5",
+    "jarFileModificationDate": "2013-11-08T18:37:08.630-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\charsets.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-api-client-android-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "158f52b948d001e18b4281225b267ee5fdb54c36",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-api-client-android-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "android",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "9d58c29f33a93f486da30401118a4e45a7f208cb",
+    "jarFileModificationDate": "2014-11-06T02:02:02.027-08:00",
+    "location": "C:\\adt-bundle-windows-x86_64-20140321\\sdk\\platforms\\android-19\\android.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "290db2acdf8d82a3a8c351ce030e0c19ff93b003",
+    "jarFileModificationDate": "2013-11-08T18:37:06.862-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\ext\\jaccess.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-oauth-client-jetty-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "21d9f77737df9eae8513f8b7c24644d99c0a9d4e",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-oauth-client-jetty-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-1.18.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "041f593dcc111f46f32676e9f6856430f1294ddf",
+    "jarFileModificationDate": "2014-11-20T22:31:36.090-08:00",
+    "location": "C:\\Users\\Shruthi\\Documents\\finalprojecttry1\\finalproject_try1\\libs\\google-http-client-1.18.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "jre",
+    "version": {
+      "major": 1,
+      "minor": 0,
+      "micro": 0,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "442144fb304e0895e42527f0d796dc6a070afc49",
+    "jarFileModificationDate": "2013-11-08T18:37:08.570-08:00",
+    "location": "C:\\Program Files\\Java\\jre7\\lib\\rt.jar",
+    "javaRuntime": true
+  },
+  {
+    "symbolicName": "google-oauth-client-servlet-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "e3ebfa3e651a265c3d1c353c4655fb51eaa62208",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-oauth-client-servlet-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "google-http-client-jackson-1.17.0-rc",
+    "version": {
+      "major": -1,
+      "minor": -1,
+      "micro": -1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "74f6954c1a401454a09d3b9465511571f183545d",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\google-http-client-jackson-1.17.0-rc.jar",
+    "javaRuntime": false
+  },
+  {
+    "symbolicName": "com.fasterxml.jackson.core.jackson-core",
+    "version": {
+      "major": 2,
+      "minor": 1,
+      "micro": 3,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "f6c3aed1cdfa21b5c1737c915186ea93a95a58bd",
+    "jarFileModificationDate": "2013-09-12T15:41:56-07:00",
+    "location": "C:\\google-api-java-client\\libs\\jackson-core-2.1.3.jar",
+    "javaRuntime": false
+  }
+]
